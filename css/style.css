@@ -4,13 +4,19 @@
 * Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
-
+/* global start*/
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* global end*/
 /*header start*/
 .logo {
-	display: inline-block;
-	vertical-align: middle;
-	max-width: 100px;
-	width: 100%;	
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;	
 }
 header {
 	display: -webkit-box;
@@ -144,8 +150,13 @@ ul > li:not(:last-child) {
 	    flex-wrap: wrap;
 	text-align: right;
 }
+.section-2-image {
+	height: 100px;
+	width: 100px;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
 .card:nth-child(1) {
-	
 	margin-bottom: 60px;
 	margin-right: 5px;
 }
@@ -157,23 +168,22 @@ ul > li:not(:last-child) {
 	margin-bottom: 60px;
 }
 .card:nth-child(4) {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 60px;
 	margin-right: 5px;
 }
 .card:nth-child(5) {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 60px;
 	margin-right: 5px;
 }
 .card:nth-child(6) {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 60px;
 }
-.section-2-image {
-	height: 100px;
-	width: 100px;
-	-o-object-fit: cover;
-	   object-fit: cover;
-}
-
 /*section 2 end*/.example {
     display: -ms-grid;
     display: grid;
